@@ -328,7 +328,30 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in voluptates eos atque ratione accusamus assumenda molestias non, labore nam numquam laudantium maiores recusandae vero quo itaque officia, sequi fugiat?</p>
+        <form class="person-data--form">
+
+          <b class="form-header">Оставьте свои данные, мы вам перезвоним</b>
+
+            <div class="formfield">
+            <input type="text" name="name" id="name" />
+              <label for="name">Имя</label>
+            </div>
+
+            <div class="formfield">
+            <input type="tel" name="phone" id="phone" />
+              <label for="phone">Телефон</label>
+            </div>
+
+            <div class="formfield">
+            <input type="mail" name="mail" id="mail" />
+              <label for="mail">Электронная почта</label>
+            </div>
+            <textarea name="" id="" rows="10" placeholder="Коментарий"></textarea>
+            <input type="checkbox" name="agreement" id="">
+            <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="">Условия договора</a></label>
+
+            <button type="submit">Отправить</button>
+          </form>
         <button data-close-modal>Close modal</button>
       </div>
     </div>
