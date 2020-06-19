@@ -297,7 +297,7 @@
 
             <div class="auth-nav">
 
-            <input class="input" type="text" name="E-mail" />
+            <input class="input" type="text" name="E-mail" placeholder="   E-mail" />
             <a href="" class="button primary">Подписаться
               <svg class="icon-send">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -346,13 +346,19 @@
             <input type="mail" name="mail" id="mail" />
               <label for="mail">Электронная почта</label>
             </div>
-            <textarea name="" id="" rows="10" placeholder="Коментарий"></textarea>
+
+            <div class="comment-field">
+              <textarea class="comment" name="" id="" rows="10" placeholder="Коментарий"></textarea>
+            </div>
+
+            <div class="formfield">
             <input type="checkbox" name="agreement" id="">
-            <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="">Условия договора</a></label>
+            <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
+            </div>
 
             <button type="submit">Отправить</button>
           </form>
-        <button data-close-modal>Close modal</button>
+        <button class="close-button" data-close-modal>X</button>
       </div>
     </div>
 
