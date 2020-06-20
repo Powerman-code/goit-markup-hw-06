@@ -1344,14 +1344,29 @@ background-position: center;
 }
 
 .formfield {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 448px;
   height: 40px;
   margin-bottom: 28px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
 
-.formfield input {
+.formfield:last-child {
+  flex-direction: row;
+}
+
+.form-input {
   margin: 0;
   padding: 12px 42px;
 
@@ -1368,8 +1383,66 @@ background-position: center;
   color:var(--primary-text-color);
 }
 
-.formfield label {
-  margin-left: 11px ;
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: var(--accent-color);
+  transform: translate(-26px, -40px);
+}
+
+.form-input:focus ~ .icon {
+  fill: var(--accent-color);
+}
+
+.icon-form {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+}
+
+/* Альтернативное подсвечивание иконки при фокусе на инпут
+.formfield:focus-within > .icon {
+  fill: var(--accent-color);
+} */
+
+
+
+.icon-name {
+  width: 12px;
+  height: 12px;
+}
+.icon-form--phone {
+  width: 13px;
+  height: 13px;
+}
+.icon-mail {
+  width: 15px;
+  height: 12px;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 textarea {
@@ -1382,6 +1455,16 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+.comment-field {
+
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form-header {

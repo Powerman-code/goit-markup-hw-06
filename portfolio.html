@@ -333,28 +333,43 @@
           <b class="form-header">Оставьте свои данные, мы вам перезвоним</b>
 
             <div class="formfield">
-            <input type="text" name="name" id="name" />
-              <label for="name">Имя</label>
+            <input class="form-input" type="text" name="name" id="name" placeholder=" " />
+              <label class="form-label" for="name">Имя</label>
+                <span class="icon">
+                  <svg class="icon-form icon-name">
+                    <use href="./images/symbol-defs.svg#icon-name_form_icon"></use>
+                  </svg>
+                </span>
             </div>
 
             <div class="formfield">
-            <input type="tel" name="phone" id="phone" />
-              <label for="phone">Телефон</label>
+            <input class="form-input" type="tel" name="phone" id="phone" placeholder=" " />
+              <label class="form-label" for="phone">Телефон</label>
+              <span class="icon">
+                <svg class="icon-form icon-form--phone">
+                  <use href="./images/symbol-defs.svg#icon-phone_form_icon"></use>
+                </svg>
+              </span>
             </div>
-
-            <div class="formfield">
-            <input type="mail" name="mail" id="mail" />
-              <label for="mail">Электронная почта</label>
-            </div>
+            <!-- 2 вид разметки (альтернативный - вместо див - лейбл) -->
+            <label class="formfield">
+            <input class="form-input" type="email" name="mail" id="mail" placeholder=" " />
+              <span class="form-label">Почта</span>
+              <span class="icon">
+                <svg class="icon-form icon-mail">
+                  <use href="./images/symbol-defs.svg#icon-envelope_form"></use>
+                </svg>
+              </span>
+            </label>
 
             <div class="comment-field">
-              <textarea class="comment" name="" id="" rows="10" placeholder="Коментарий"></textarea>
+              <textarea class="comment" name="comment" id="comment" rows="10" placeholder="   Коментарий"></textarea>
             </div>
 
-            <div class="formfield">
-            <input type="checkbox" name="agreement" id="">
-            <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
-            </div>
+            <labal class="formfield">Соглашаюсь с рассылкой и принимаю<a href="" class="agreement-link">Условия договора</a>
+            <input class="checkbox" type="checkbox">
+            <!-- <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label> -->
+            </labal>
 
             <button type="submit">Отправить</button>
           </form>
