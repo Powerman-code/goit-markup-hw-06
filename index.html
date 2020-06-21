@@ -58,7 +58,7 @@
           <div class="overlay">
             <div class="container">
               <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
-              <a href="" class="button primary hero-button">Заказать услугу</a>
+              <button class="button primary hero-button" data-open-modal>Заказать услугу</button>
             </div>
           </div>
         </section>
@@ -456,19 +456,17 @@
               </ul>
           </div>
 
-
-
           <div class="container-subscribe">
             <b class="subscribe">подпишитесь на рассылку</b>
 
             <div class="auth-nav">
 
-            <input class="input" type="text" name="E-mail" />
-            <a href="" class="button primary">Подписаться
+            <input class="input" type="text" name="E-mail" placeholder="E-mail" />
+            <button class="button primary">Подписаться
               <svg class="icon-send">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
-            </a>
+            </button>
             </div>
           </div>
 
@@ -477,12 +475,70 @@
       <div class="copyright">
         <p class="developed">2020 | Developed by GoIT Students</p>
       </div>
-
-
-
       <!--Альтернативный вариант
         <p class="copyright">&#169; 2020 | Developed by GoIT Students</p> -->
     </footer>
+
+      <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="person-data--form">
+
+          <b class="form-header">Оставьте свои данные, мы вам перезвоним</b>
+
+            <div class="formfield">
+            <input class="form-input" type="text" name="name" id="name" placeholder=" " />
+              <label class="form-label" for="name">Имя</label>
+                <span class="icon">
+                  <svg class="icon-form icon-name">
+                    <use href="./images/symbol-defs.svg#icon-name_form_icon"></use>
+                  </svg>
+                </span>
+            </div>
+
+            <div class="formfield">
+            <input class="form-input" type="tel" name="phone" id="phone" placeholder=" " />
+              <label class="form-label" for="phone">Телефон</label>
+              <span class="icon">
+                <svg class="icon-form icon-form--phone">
+                  <use href="./images/symbol-defs.svg#icon-phone_form_icon"></use>
+                </svg>
+              </span>
+            </div>
+            <!-- 2 вид разметки (альтернативный - вместо див - лейбл) -->
+            <label class="formfield">
+            <input class="form-input" type="email" name="mail" id="mail" placeholder=" " />
+              <span class="form-label">Почта</span>
+              <span class="icon">
+                <svg class="icon-form icon-mail">
+                  <use href="./images/symbol-defs.svg#icon-envelope_form"></use>
+                </svg>
+              </span>
+            </label>
+
+            <div class="comment-field">
+              <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Коментарий"></textarea>
+            </div>
+
+            <label class="form-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a>
+              <input class="checkbox" type="checkbox">
+                <svg class="icon-check">
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+            </label>
+
+            <button class ="button primary form-button" type="submit">Отправить</button>
+          </form>
+        <button class="close-button" data-close-modal>
+          <svg class="close-icon">
+            <use href="./images/symbol-defs.svg#icon-close_form_icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/send.js"></script>
   </body>
 
 </html>
