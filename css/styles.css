@@ -1308,7 +1308,20 @@ background-position: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
   box-sizing: border-box;
+
+  cursor: pointer;
 }
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--title-text-color);
+}
+
+/* .qwe {
+  fill: red;
+  background-size: cover;
+} */
 
 .backdrop {
   position: fixed;
@@ -1358,6 +1371,7 @@ background-position: center;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 
   font-family: Roboto;
   font-style: normal;
@@ -1442,10 +1456,15 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 }
 
-.comment-field {
+.comment:focus {
+  border-color: var(--accent-color);
+}
 
+.comment:focus::placeholder {
+  color: var(--accent-color);
 }
 
 .checkbox {
@@ -1503,18 +1522,17 @@ textarea {
   color: var(--title-text-color);
 }
 
-.person-data--form input[type="checkbox"] {
-
+.form-button {
+  width: 200px;
+  height: 50px;
+  margin: 40px 123px 30px 125px ;
 }
-.person-data--form label[for="agreement"] {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1,71;
-  letter-spacing: 0.03em;
 
-  color: #757575;
+.form-button:hover,
+.form-button:focus {
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--header-and-text-color)
 }
 
 .agreement-link {
