@@ -255,8 +255,10 @@
 
           <div class="join-container">
             <b class="join">присоединяйтесь</b>
-            <ul class="social-networks">
-              <li class="sn-element footer-element">
+            <!-- <div class="social-networks"> -->
+              <ul class="social-networks">
+
+                <li class="sn-element footer-element">
                   <a href="" class="link-socialnetworks footer--link--socialnetworks">
                     <svg class="icon-instagram">
                       <use href="./images/symbol-defs.svg#icon-instagram"></use>
@@ -287,23 +289,21 @@
                     </svg>
                   </a>
                 </li>
-            </ul>
+              </ul>
           </div>
-
-
 
           <div class="container-subscribe">
             <b class="subscribe">подпишитесь на рассылку</b>
 
-            <div class="auth-nav">
-
-            <input class="input" type="text" name="E-mail" placeholder="   E-mail" />
-            <a href="" class="button primary">Подписаться
-              <svg class="icon-send">
-                <use href="./images/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </a>
-            </div>
+            <form class="auth-nav">
+              <!-- <label for="E-mail"></label> -->
+              <input class="input" type="text" name="E-mail" placeholder="E-mail" />
+              <button class="button primary">Подписаться
+                <svg class="icon-send">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
 
       </div>
@@ -311,107 +311,8 @@
       <div class="copyright">
         <p class="developed">2020 | Developed by GoIT Students</p>
       </div>
-
-
-
       <!--Альтернативный вариант
         <p class="copyright">&#169; 2020 | Developed by GoIT Students</p> -->
     </footer>
-
-    <button class="btn">qweqwe</button>
-
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus facilis distinctio numquam adipisci! Totam architecto quidem saepe similique aliquid beatae rerum dolore dolores reprehenderit numquam, recusandae fugit natus id cumque.</p>
-
-    <button data-open-modal>Open modal</button>
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quo, nobis temporibus dignissimos quibusdam dolores rerum repudiandae consequuntur saepe tenetur modi magni, quam voluptas vitae ex! Veritatis, accusamus. Adipisci, inventore!</p>
-
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <form class="person-data--form">
-
-          <b class="form-header">Оставьте свои данные, мы вам перезвоним</b>
-
-            <div class="formfield">
-            <input class="form-input" type="text" name="name" id="name" placeholder=" " />
-              <label class="form-label" for="name">Имя</label>
-                <span class="icon">
-                  <svg class="icon-form icon-name">
-                    <use href="./images/symbol-defs.svg#icon-name_form_icon"></use>
-                  </svg>
-                </span>
-            </div>
-
-            <div class="formfield">
-            <input class="form-input" type="tel" name="phone" id="phone" placeholder=" " />
-              <label class="form-label" for="phone">Телефон</label>
-              <span class="icon">
-                <svg class="icon-form icon-form--phone">
-                  <use href="./images/symbol-defs.svg#icon-phone_form_icon"></use>
-                </svg>
-              </span>
-            </div>
-            <!-- 2 вид разметки (альтернативный - вместо див - лейбл) -->
-            <label class="formfield">
-            <input class="form-input" type="email" name="mail" id="mail" placeholder=" " />
-              <span class="form-label">Почта</span>
-              <span class="icon">
-                <svg class="icon-form icon-mail">
-                  <use href="./images/symbol-defs.svg#icon-envelope_form"></use>
-                </svg>
-              </span>
-            </label>
-
-            <div class="comment-field">
-              <textarea class="comment" name="comment" id="comment" rows="10" placeholder="Коментарий"></textarea>
-            </div>
-
-            <label class="form-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a>
-              <input class="checkbox" type="checkbox">
-                <svg class="icon-check">
-                  <use href="./images/symbol-defs.svg#icon-check"></use>
-                </svg>
-            </label>
-
-            <button class ="button primary form-button" type="submit">Отправить</button>
-          </form>
-        <button class="close-button" data-close-modal>
-          <svg class="close-icon">
-            <use href="./images/symbol-defs.svg#icon-close_form_icon"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <ul class="testingmenu">
-      <li class="testingmenu-item">
-        <a href="" class="testingmenu-link">Кондиционеры</a>
-      </li>
-
-      <li class="testingmenu-item">
-        <a href="" class="testingmenu-link">Телевизоры</a>
-      </li>
-
-      <li class="testingmenu-item">
-        <a href="" class="testingmenu-link">Холодильники</a>
-          <ul class="testingsubmenu">
-            <li><a href="">Марка 1</a></li>
-            <li><a href="">Марка 2</a></li>
-            <li><a href="">Марка 3</a></li>
-          </ul>
-      </li>
-
-    </ul>
-
-    <span>
-      <svg class="qwe">
-        <use  href="./images/close_form_icon.svg" width="500px"></use>
-      </svg>
-    </span>
-
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, eos! Vitae eius iusto dolorem accusantium assumenda, blanditiis nobis unde tempore quae veniam dicta nihil et hic voluptatum beatae alias illum.</p>
-
-    <script src="./js/modal.js"></script>
-    <script src="./js/send.js"></script>
   </body>
 </html>
